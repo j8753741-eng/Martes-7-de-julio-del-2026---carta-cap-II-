@@ -1,119 +1,780 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+
 <meta charset="UTF-8">
-<title>✦ Donde Siempre Vuelve Mi Corazón ✦</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>MARTES 7 DE JULIO DEL 2026 - CARTA</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
 
 <style>
-    body{
-        margin:0;
-        padding:0;
-        background:#1a1410;
-        display:flex;
-        justify-content:center;
-        align-items:center;
-        font-family:"Garamond", serif;
-        color:#2b1d14;
-    }
 
-    .book-page{
-        width:800px;
-        min-height:100vh;
-        background:linear-gradient(135deg,#f5ecd8,#e8dcc0);
-        padding:60px 70px;
-        box-shadow:0 0 40px rgba(0,0,0,0.6);
-        position:relative;
-        border:2px solid #c2a878;
-    }
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
 
-    .ornament-top, .ornament-bottom{
-        text-align:center;
-        font-size:18px;
-        letter-spacing:6px;
-        color:#7a5c3b;
-    }
+body{
 
-    .chapter-title{
-        text-align:center;
-        margin-top:30px;
-        font-size:22px;
-        letter-spacing:2px;
-    }
+background:
+radial-gradient(circle at center,#5c4327 0%,#352112 45%,#170d08 100%);
 
-    .meta{
-        text-align:center;
-        margin-top:10px;
-        font-size:14px;
-        opacity:0.8;
-    }
+min-height:100vh;
 
-    .content{
-        margin-top:60px;
-        text-align:center;
-        line-height:1.8;
-        font-size:16px;
-        min-height:300px;
-        border:1px dashed #b79a6b;
-        padding:20px;
-        font-style:italic;
-    }
+font-family:'Cormorant Garamond',serif;
 
-    .status{
-        text-align:center;
-        margin-top:40px;
-        font-style:italic;
-        color:#6b4e2e;
-    }
+padding:60px 20px;
 
-    .page-number{
-        position:absolute;
-        bottom:20px;
-        right:30px;
-        font-size:14px;
-        color:#7a5c3b;
-    }
+overflow-x:hidden;
 
-    .seal{
-        margin:50px auto 0;
-        width:70px;
-        height:70px;
-        background:#7b2e2e;
-        border-radius:50%;
-        box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
-        border:3px solid #d4af7a;
-    }
+}
+
+/* Mesa */
+
+body::before{
+
+content:"";
+
+position:fixed;
+
+inset:0;
+
+background:
+repeating-linear-gradient(
+90deg,
+rgba(255,255,255,.015),
+rgba(255,255,255,.015) 3px,
+transparent 3px,
+transparent 80px
+);
+
+opacity:.35;
+
+pointer-events:none;
+
+}
+
+/* Libro */
+
+.book{
+
+max-width:950px;
+
+margin:auto;
+
+background:#4b2816;
+
+border-radius:18px;
+
+padding:28px;
+
+box-shadow:
+0 25px 60px rgba(0,0,0,.65);
+
+border:6px solid #8f693d;
+
+position:relative;
+
+}
+
+/* Grabado dorado */
+
+.cover-title{
+
+text-align:center;
+
+font-family:'Cinzel',serif;
+
+font-size:2rem;
+
+color:#f7d98d;
+
+letter-spacing:3px;
+
+text-shadow:
+0 2px 0 #7b582c,
+0 0 12px rgba(255,217,141,.35);
+
+margin-bottom:22px;
+
+}
+
+/* Página */
+
+.page{
+
+background:
+linear-gradient(#f9f0d9,#efe1bf);
+
+border-radius:10px;
+
+padding:65px;
+
+position:relative;
+
+box-shadow:
+inset 0 0 30px rgba(0,0,0,.12);
+
+}
+
+/* Textura */
+
+.page::before{
+
+content:"";
+
+position:absolute;
+
+inset:0;
+
+background-image:
+radial-gradient(rgba(90,70,40,.05) 1px,transparent 1px);
+
+background-size:18px 18px;
+
+opacity:.55;
+
+pointer-events:none;
+
+}
+
+/* Filigranas */
+
+.corner{
+
+position:absolute;
+
+font-size:44px;
+
+color:#b08a45;
+
+opacity:.7;
+
+}
+
+.c1{
+
+top:15px;
+left:22px;
+
+}
+
+.c2{
+
+top:15px;
+right:22px;
+
+transform:rotate(90deg);
+
+}
+
+.c3{
+
+bottom:15px;
+left:22px;
+
+transform:rotate(-90deg);
+
+}
+
+.c4{
+
+bottom:15px;
+right:22px;
+
+transform:rotate(180deg);
+
+}
+
+/* Encabezado */
+
+.header{
+
+text-align:center;
+
+margin-bottom:55px;
+
+}
+
+.header h1{
+
+font-family:'Cinzel',serif;
+
+font-size:2rem;
+
+line-height:1.5;
+
+color:#5b3213;
+
+margin-bottom:22px;
+
+}
+
+.date{
+
+font-size:1rem;
+
+color:#7b5c2e;
+
+letter-spacing:1px;
+
+}
+
+/* Saludo */
+
+.greeting{
+
+margin-top:35px;
+
+font-family:'Great Vibes',cursive;
+
+font-size:3rem;
+
+color:#7b4323;
+
+margin-bottom:28px;
+
+}
+
+/* Texto */
+
+p{
+
+font-size:1.35rem;
+
+line-height:2.05;
+
+text-align:justify;
+
+color:#4d3520;
+
+margin-bottom:22px;
+
+}
+
+/* Letra capital */
+
+.first::first-letter{
+
+font-size:5rem;
+
+float:left;
+
+line-height:.9;
+
+padding-right:10px;
+
+font-family:'Cinzel',serif;
+
+color:#8d5a2d;
+
+}
+
+strong{
+
+font-weight:700;
+
+}
+
+.divider{
+
+text-align:center;
+
+font-size:26px;
+
+margin:35px 0;
+
+color:#9b7643;
+
+}
+
+/* ========= PASAR LA PÁGINA ========= */
+
+.page-turn{
+
+margin:55px auto 25px;
+
+text-align:center;
+
+}
+
+.page-turn-text{
+
+font-family:'Cormorant Garamond',serif;
+
+font-size:1.25rem;
+
+color:#7a5b39;
+
+line-height:1.8;
+
+margin-bottom:28px;
+
+font-style:italic;
+
+}
+
+.page-corner{
+
+display:inline-flex;
+
+align-items:center;
+
+justify-content:center;
+
+width:170px;
+
+height:70px;
+
+background:linear-gradient(145deg,#f8f0dc,#ead8b3);
+
+border:2px solid #c9a36b;
+
+text-decoration:none;
+
+color:#6b4725;
+
+font-family:'Cinzel',serif;
+
+font-size:.9rem;
+
+letter-spacing:2px;
+
+clip-path:polygon(0 0,100% 0,100% 75%,82% 100%,0 100%);
+
+box-shadow:
+0 10px 25px rgba(0,0,0,.18);
+
+transition:.35s;
+
+}
+
+.page-corner:hover{
+
+transform:translateY(-5px) rotate(-2deg);
+
+box-shadow:
+0 18px 35px rgba(0,0,0,.28);
+
+}
+
+.page-corner span{
+
+padding:0 12px;
+
+text-align:center;
+
+}
+
 </style>
+
 </head>
 
 <body>
 
-<div class="book-page">
+<div class="book">
 
-    <div class="ornament-top">✦ ❦ ✦ ❦ ✦ ❦ ✦</div>
+<div class="cover-title">
 
-    <div class="chapter-title">
-        Capítulo III
-    </div>
+✦ Donde Siempre Vuelve Mi Corazón ✦
 
-    <div class="meta">
-        Martes 7 de julio de 2026 · Noche
-    </div>
+</div>
 
-    <div class="content">
-        <strong>Página en proceso de escritura...</strong>
-    </div>
+<div class="page">
 
-    <div class="status">
-        ✎ Capítulo en construcción dentro del libro antiguo
-    </div>
+<div class="corner c1">❦</div>
+<div class="corner c2">❦</div>
+<div class="corner c3">❦</div>
+<div class="corner c4">❦</div>
 
-    <div class="seal"></div>
+<div class="header">
 
-    <div class="page-number">❦ &nbsp; III &nbsp; ❦</div>
+<h1>
 
-    <div class="ornament-bottom">✦ ❦ ✦ ❦ ✦ ❦ ✦</div>
+<strong>CAPÍTULO III</strong>
+
+<br><br>
+
+<strong>DONDE SIETE DÍAS PARECEN UNA ETERNIDAD CUANDO EL CORAZÓN SOLO SABE EXTRAÑAR</strong>
+
+</h1>
+
+<div class="date">
+
+<strong>Martes, 7 de julio del 2026 – Por la noche</strong>
+
+</div>
+
+</div>
+
+<div class="greeting">
+
+Mi niña hermosa:
+
+</div>
+
+<p class="first">
+
+Hay noches que parecen escritas por un viejo autor, de esos que sabían convertir los pequeños momentos en capítulos inolvidables. Y esta es una de ellas.
+
+</p>
+
+<p>
+
+Hoy el destino jugó con nuestras emociones como si quisiera comprobar cuánto puede resistir un corazón enamorado. Primero vimos cómo, cuando parecía que todo estaba decidido, el resultado cambió en los últimos minutos y Argentina terminó ganando. Después llegó ese otro momento que ambos esperábamos que nunca ocurriera: Colombia cayó ante Suiza. Recordé que me habías dicho que, si Colombia quedaba eliminada del mundial, llorarías. Cuando supe el resultado, lo primero que hizo mi corazón fue correr hasta ti. No para hablar del partido, sino para saber cómo estaba la persona que más amo en este mundo.
+
+</p>
+
+<p>
+
+Cuando me respondiste con ese pequeño "No", sentí que hubiera dado cualquier cosa por estar a tu lado. No para cambiar el marcador, porque eso nadie puede hacerlo, sino para abrazarte tan fuerte que, por un instante, olvidaras la tristeza. Preferí guardar silencio un rato, porque entendí que a veces el amor también consiste en respetar el espacio de quien necesita respirar. Y cuando volviste a escribirme diciendo que ya estabas mejor, fue como si el cielo hubiera decidido regalarme un poco de calma. No sabes cuánto alivio sentí. Porque hay algo que siempre será verdad: cuando tú estás bien, mi corazón también encuentra la manera de sonreír.
+
+</p>
+
+<div class="divider">
+
+❦
+
+</div>
+
+<p>
+
+Pero esta noche también tiene otra tristeza que no deja de abrazarme.
+
+</p>
+
+<p>
+
+Hoy nos vimos... y aun así siento que te extraño como si llevara mucho tiempo sin encontrarte. Me duele saber que pasarán seis días y medio antes de volver a tenerte frente a mí. Siete días sin escuchar tu risa de cerca, sin perderme en tus ojos, sin sentir el calor de tus abrazos... y lo que más pesa en mi pecho es saber que serán siete días sin poder besar esos labios que se han convertido en el lugar donde mi alma siempre quiere regresar.
+
+</p>
+
+<p>
+
+Quién diría que un beso pudiera hacer tanta falta. Quién diría que un solo abrazo tuyo pudiera convertirse en el refugio que más necesita mi corazón. Hoy no nos besamos, y desde que me despedí de ti siento un pequeño vacío que solo tiene un nombre: el tuyo.
+
+</p>
+
+<p>
+
+Aun así, si algo he aprendido desde que llegaste a mi vida es que el amor verdadero también sabe esperar. Espera con paciencia, con esperanza y con la certeza de que cada segundo de distancia solo hace más hermoso el próximo reencuentro. Estoy seguro de que cuando vuelva a tenerte frente a mí, ese abrazo que tanto extraño tendrá la fuerza de todos los días que estuvimos separados, y ese beso guardará el cariño que he ido acumulando durante cada noche en la que solo pude cerrar los ojos para imaginarte.
+
+</p>
+
+<p>
+
+Así que esta noche cierro este capítulo con una promesa silenciosa: voy a extrañarte en cada amanecer y en cada anochecer, pero jamás dejaré de amarte ni un solo instante. Porque la distancia puede impedir que mis manos alcancen las tuyas, pero nunca podrá impedir que mi corazón siga caminando todos los días hacia ti.
+
+</p>
+
+<p>
+
+<strong>Buenas noches, mi princesa.</strong> Descansa mucho. Sueña bonito. Y, mientras llega el día de volver a abrazarte, recuerda que hay un hombre que, incluso a la distancia, sigue enamorándose de ti una y otra vez, con la misma intensidad con la que el mar abraza la orilla sin cansarse jamás.
+
+</p>
+
+<p style="text-align:center; margin-top:40px;">
+
+<strong>Con todo mi amor, hoy, mañana y siempre...</strong>
+
+<br><br>
+
+<strong>El hombre que jamás dejará de elegirte. ❤️</strong>
+
+</p>
+
+<hr style="
+margin:55px auto;
+width:82%;
+border:none;
+border-top:1px solid rgba(120,85,40,.35);
+">
+
+<style>
+
+/*==========================
+GRABADO FINAL
+==========================*/
+
+.book-quote{
+
+margin:0 auto 55px;
+max-width:760px;
+padding:28px 36px;
+
+border:2px solid rgba(176,138,69,.45);
+border-radius:10px;
+
+background:rgba(255,248,228,.45);
+
+position:relative;
+
+}
+
+.book-quote::before{
+
+content:"❦";
+
+position:absolute;
+
+top:-18px;
+left:50%;
+
+transform:translateX(-50%);
+
+background:#efe1bf;
+
+padding:0 14px;
+
+font-size:26px;
+
+color:#9b7643;
+
+}
+
+.book-quote p{
+
+margin:0;
+
+text-align:center;
+
+font-size:1.45rem;
+
+line-height:2;
+
+color:#8b3dff;
+
+font-family:'Cormorant Garamond',serif;
+
+text-shadow:
+0 0 5px rgba(171,92,255,.45),
+0 0 10px rgba(171,92,255,.35),
+0 0 18px rgba(171,92,255,.28);
+
+}
+
+</style>
+
+<div class="book-quote">
+
+<p>
+
+<strong>
+
+Y si el destino decidió regalarnos siete días sin abrazos, también decidió demostrarme que ni el tiempo, ni la distancia, ni la ausencia son capaces de hacer más pequeño lo que siento por ti; al contrario, cada amanecer lejos de tus labios convierte mi amor en algo más inmenso, más profundo y más eterno, porque mientras espero volver a encontrarte, mi corazón seguirá besando el recuerdo de tu sonrisa y abrazando tu nombre en silencio, hasta que llegue el instante en que pueda volver a decirte con un beso todo lo que estas noches callaron... Siempre serás el capítulo más hermoso que Dios escribió para mi vida, **VALERIA PETRO VILLAZÓN.**
+
+</strong>
+
+</p>
+
+</div>
+
+<style>
+
+/*=========================================
+SELLO DE CERA
+=========================================*/
+
+.seal-container{
+
+display:flex;
+
+justify-content:center;
+
+margin:45px 0 15px;
+
+}
+
+.wax-seal{
+
+width:165px;
+height:165px;
+
+border-radius:50%;
+
+text-decoration:none;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+text-align:center;
+
+padding:18px;
+
+font-family:'Cinzel',serif;
+
+font-size:.82rem;
+
+font-weight:700;
+
+letter-spacing:1px;
+
+color:#fff7ff;
+
+background:
+radial-gradient(circle at 35% 30%,
+#d88cff 0%,
+#a93fff 45%,
+#6d179f 75%,
+#4c0c74 100%);
+
+border:5px solid #f2d89d;
+
+box-shadow:
+0 12px 25px rgba(0,0,0,.35),
+inset 0 3px 10px rgba(255,255,255,.25),
+inset 0 -8px 15px rgba(0,0,0,.25);
+
+transition:.35s ease;
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+.wax-seal::before{
+
+content:"";
+
+position:absolute;
+
+width:210px;
+height:40px;
+
+background:rgba(255,255,255,.22);
+
+transform:rotate(-35deg);
+
+top:18px;
+left:-60px;
+
+}
+
+.wax-seal:hover{
+
+transform:scale(1.08) rotate(-2deg);
+
+box-shadow:
+0 20px 35px rgba(0,0,0,.45);
+
+}
+
+.ribbon{
+
+width:6px;
+
+height:95px;
+
+background:linear-gradient(#b3884d,#f4dca6,#b3884d);
+
+margin:0 auto;
+
+border-radius:5px;
+
+}
+
+.end-message{
+
+margin-top:28px;
+
+text-align:center;
+
+font-family:'Great Vibes',cursive;
+
+font-size:2.3rem;
+
+color:#7b4323;
+
+}
+
+.page-number{
+
+margin-top:40px;
+
+text-align:center;
+
+font-family:'Cinzel',serif;
+
+font-size:.95rem;
+
+letter-spacing:5px;
+
+color:#9a7742;
+
+}
+
+</style>
+
+<div class="seal-container">
+
+<a
+class="wax-seal"
+target="_blank"
+href="https://j8753741-eng.github.io/Martes-7-de-julio-del-2026---poema/">
+
+📜<br>
+
+ABRIR EL<br>
+
+POEMA DE<br>
+
+ESTA NOCHE
+
+</a>
+
+</div>
+
+<div class="page-turn">
+
+<p class="page-turn-text">
+
+<strong>El siguiente capítulo ya espera pacientemente entre estas páginas, deseando volver a abrazar tu corazón.</strong><br>
+
+Solo tienes que dejar que la historia continúe.
+
+</p>
+
+<a href="#" class="page-corner">
+
+<span>✦ Pasar la página ✦</span>
+
+</a>
+
+</div>
+
+<div class="ribbon"></div>
+
+<div class="end-message">
+
+<strong>
+
+Porque donde siempre vuelve mi corazón... siempre comienza un nuevo capítulo contigo.
+
+</strong>
+
+</div>
+
+<div class="page-number">
+
+❦ &nbsp; III &nbsp; ❦
+
+</div>
+
+</div>
 
 </div>
 
 </body>
+
 </html>
